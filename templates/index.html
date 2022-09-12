@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+    <title>Tabela Mestra</title>
+</head>
+<body>
+    <h1>Tabela de Fainas de Emergência</h1>
+    <h2>Estações de Incêndio e Emergência</h2>
+    <div class="stationbill">
+    <div class="col1">
+        <div class="row0">
+            <table class="fire-major-title">
+                <tr><td>ESTAÇÕES DE INCÊNDIO E EMERGÊNCIA</td></tr>
+            </table>
+        </div>
+        <div class="row1">
+            <table>
+                <tr>
+                    <td class="table-title" colspan="2">Centro de Comando</td>
+                </tr>
+                <tr>
+                    <td class="table-minor-title" colspan="2">PONTE</td>
+                </tr>
+                <tr><td>COMANDANTE / OIM</td><td>No comando Geral</td></tr>
+                <tr><td>SUPERINTENDENTE DE PLATAFORMA</td><td>Auxiliar o OIM/Contactar a Ocyan</td></tr>
+                <tr><td>COORDENADOR DE MANUT.</td><td>Suporte Técnico</td></tr>
+                <tr><td>SDPO (Em Serviço)</td><td>Controle de DP</td></tr>
+                <tr><td>DPO (Em Serviço)</td><td>Comun. Equipe Emergência</td></tr>
+                <tr><td>SDPO (Em Folga)</td><td>Auxilia o OIM</td></tr>
+                <tr><td>REPRESENTANTE DA COMPANHIA</td><td>Interface com a Base Em Terra</td></tr>
+                <tr><td>SUPERVISORES DE ELT & ET</td><td>Auxilia o OIM</td></tr>
+                <tr><td>RADIO OPERADOR (Serviço)</td><td>Comunicações</td></tr>
+                <tr><td>RADIO OPERADOR (Folga)</td><td>Quadro de Eventos</td></tr>
+                <tr><td>DPO (Fora de Serviço)</td><td>Auxilia o OIM</td></tr>        
+            </table>
+        </div>
+        <div class="row2">
+            <div class="subcol1">
+                <table>
+                    <tr><td class="table-minor-title" colspan="2">EQUIPE #1 (Brigada)</td></tr>
+                    <tr><td>OF. DE MÁQUINAS(serviço)</td><td>Líder de Equipe</td></tr>
+                    <tr><td>ENC. CONVÉS (Serviço)</td><td>Assist. Líder de Equipe</td></tr>
+                    <tr><td>OP.GUINDASTE (Serviço)</td><td>Equipe Conjunto de BA</td></tr>
+                    <tr><td>ASS. OP. GUINDASTE (Serviço)</td><td>Equipe Conjunto de BA</td></tr>
+                    <tr><td>3 x AUX. PLAT.(Serviço)</td><td>Equipe da Mangueira</td></tr>
+                    <tr><td>ELETRICISTA (Serviço)</td><td>Auxilia o Líder de Equipe</td></tr>
+                </table>
+                <table>
+                    <tr><td class="table-title" colspan="2">Equipe de Controle de Poço</td></tr>
+                    <tr><td class="table-minor-title" colspan="2">Plataforma</td></tr>
+                    <tr><td>ENC. SONDA (Serviço)</td><td>Líder de Equipe</td></tr>
+                    <tr><td>SONDADOR (Serviço)</td><td>Fechar Poço</td></tr>
+                    <tr><td>ASS.SONDADOR (Serviço)</td><td>Auxilia o Líder de Equipe</td></tr>
+                    <tr><td>TORRISTA (Serviço)</td><td>Auxilia o Líder de Equipe</td></tr>
+                    <tr><td>ASS. TORRISTA (Serviço)</td><td>Auxilia o Líder de Equipe</td></tr>
+                    <tr><td>PLATAFORMISTA (Serviço)</td><td>Auxilia o Líder de Equipe</td></tr>
+                    <tr><td>SUP. SUBSEA (Serviço)</td><td>Painel de BOP em Stby</td></tr>
+                    <tr><td>ASS.  SUBSEA / AUX. SUBSEA (Serviço)</td><td>Auxiliar Supv de Subsea</td></tr>
+                    <tr><td class="table-minor-title" colspan="2">ESCRITÓRIO DO ENC. DA PLATAFORMA</td></tr>
+                    <tr><td>ENC. SONDA (Folga)</td><td>Painel de BOP em Stby</td></tr>
+                    <tr><td>SUP. SUBSEA (Folga)</td><td>Painel de BOP em Stby</td></tr>
+                </table>
+                <table>
+                    <tr><td class="table-title" colspan="2">HOSPITAL</td></tr>
+                    <tr><td>ENFERMEIRO / MEDICO</td><td>Líder de Equipe</td></tr>
+                    <tr><td>SONDADOR (Folga)</td><td>Equipe de Maca</td></tr>
+                    <tr><td>ASS. SONDADOR (Folga)</td><td>Equipe de Maca</td></tr>
+                    <tr><td>TORRISTA (Folga)</td><td>Equipe de Maca</td></tr>
+                    <tr><td>ASS. TORRISTA (Folga)</td><td>Equipe de Maca</td></tr>
+                </table>
+                <table>
+                    <tr><td class="table-title" colspan="2">Equipe de HLO</td></tr>
+                    <tr><td class="table-minor-title" colspan="2">HELIPONTO</td></tr>
+                    <tr><td>OP. GUINDASTE (Serviço)</td><td>HLO</td></tr>
+                    <tr><td>ENC. CONVÉS (Serviço)</td><td>Auxilia o HLO</td></tr>
+                    <tr><td>ASS. OP. GUINDASTE (Serviço)</td><td>Auxilia o HLO</td></tr>
+                    <tr><td>AUX. PLAT.(Serviço)</td><td>Canhão de Espuma</td></tr>
+                    <tr><td>AUX. PLAT.(Serviço)</td><td>Canhão de Espuma</td></tr>
+                    <tr><td>AUX. PLAT.(Serviço)</td><td>Canhão de Espuma</td></tr>
+                </table>
+                <table>
+                    <tr><td class="table-title" colspan="2">Verificação de Grupamento</td></tr>
+                    <tr><td>Coord  de Segurança T e T. </td><td>L/B # 1 (Alt L/B 4)</td></tr>
+                    <tr><td>Téc de Segurança do T (Serviço)</td><td>L/B # 3 (Alt L/B 6)</td></tr>
+                    <tr><td>Téc de Segurança do T (Folga)</td><td>L/B # 2 (Alt L/B 5)</td></tr>
+                </table>
+            </div>
+            
+            <div class="subcol2">
+                <table>
+                    <tr><td class="table-minor-title" colspan="2">EQUIPE #2 (Brigada)</td></tr>
+                    <tr><td>OF. DE MÁQUINAS(Folga)</td><td>Líder de Equipe</td></tr>
+                    <tr><td>ENC. CONVÉS (Folga)</td><td>Assist. Líder de Equipe</td></tr>
+                    <tr><td>OPER. DE GUIND. (Folga)</td><td>Equipe Conjunto de BA</td></tr>
+                    <tr><td>ASS.OP. GUIND. (Folga)</td><td>Equipe Conjunto de BA</td></tr>
+                    <tr><td>3 x AUX. PLAT.(Folga)</td><td>Equipe da Mangueira</td></tr>
+                    <tr><td>ELETRICISTA (Folga)</td><td>Auxilia o Líder de Equipe</td></tr>
+                </table>
+                <table>
+                    <tr><td class="table-title" colspan="2">EQUIPE DE LIBERAÇÃO DAS ACOMODAÇÕES</td></tr>
+                    <tr><td>COMISSÁRIO(A)</td><td>Líder de Equipe</td></tr>
+                    <tr><td>COZINHEIRO (Serviço)</td><td>Protege a Cozinha</td></tr>
+                    <tr><td>TAIFEIRO</td><td>Verificação de Cabine</td></tr>
+                    <tr><td rowspan="2" colspan="2" class="note-cell">Após conduzir estas tarefas, reportar a Ponte e prosseguir à estação de Abandono do Navio.</td></tr>
+                </table>
+            
+                
+            
+                <table>
+                    <tr><td class="table-title" colspan="2">EQUIPE DE CONTROLE DE DANOS</td></tr>
+                    <tr><td class="table-minor-title" colspan="2">CENTRO CONTROLE MÁQ. (CCM)</td></tr>
+                    <tr><td>CHEFE DE MÁQUINAS</td><td>Líder de Equipe</td></tr>
+                    <tr><td>OF MÁQUINAS(serviço)</td><td>Auxilia o Líder de Equipe</td></tr>
+                    <tr><td>CHEFE DE ELÉTRICA</td><td>Auxilia o Líder de Equipe</td></tr>
+                    <tr><td>TEC ELETRÔNICA (Serviço)</td><td>Auxilia o Líder de Equipe</td></tr>
+                    <tr><td>SUP. DE MECÂNICA</td><td>Auxilia o Líder de Equipe</td></tr>
+                    <tr><td>CHEFE DE MECÂNICA</td><td>Auxilia o Líder de Equipe</td></tr>
+                    <tr><td>MNM(Serviço)</td><td>Auxilia o Líder de Equipe</td></tr>
+                </table>
+                <table>
+                    <tr><td class="table-title" colspan="2">EQUIPE DE FRC</td></tr>
+                    <tr><td>MCB/Imediato</td><td> Timoneiro Lider da Equipe</td></tr>
+                    <tr><td>MNC (Serviço)</td><td>2º Timoneiro</td></tr>
+                    <tr><td>2º OF. MÁQ.(serviço)</td><td>Op. de Guincho</td></tr>
+                    <tr><td>Mecânico (Serviço)</td><td>Mecânico/Auxilia o Líder de Equipe</td></tr>
+                </table>
+            
+                <table>
+                    <tr><td class="table-title" colspan="2">EQUIPE DE RESGATE EM ALTURA</td></tr>
+                    <tr><td>TORRISTA (Serviço)</td><td>Líder de Equipe</td></tr>
+                    <tr><td>PLATAFORMISTA (Serviço)</td><td>Auxilia o Líder de Equipe</td></tr>
+                    <tr><td>PLATAFORMISTA (Serviço)</td><td>Auxilia o Líder de Equipe</td></tr>
+                    <tr><td>PLATAFORMISTA (Serviço)</td><td>Auxilia o Líder de Equipe</td></tr>
+                </table>
+            
+                <table>
+                    <tr><td class="table-title" colspan="2">EQUIPE DE RESGATE EM ESPAÇO CONFINADO</td></tr>
+                    <tr><td>ENC. CONVÉS (Serviço)</td><td>Líder de Equipe</td></tr>
+                    <tr><td>3 x AUX. PLAT.(Serviço)</td><td>Auxilia o Líder de Equipe</td></tr>
+                    <tr><td>OST (Serviço)</td><td>Auxilia o Líder de Equipe</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="row3">
+            <table>
+                <colgroup>
+                    <col span="1" style="width: 50%">
+                    <col span="1" style="width: 50%">
+                </colgroup>
+                <thead>
+                    <tr><td class="table-title" colspan="2">EQUIPE DE COMBATE SOPEP / PEI</td></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-size: 10px">COMANDANTE/OIM / IMEDIATO*</td>
+                        <td>Comandante inicial do incidente</td>
+                    </tr>
+                    <tr><td style="font-size: 10px">SUPERINT.PLATAFORMA / ENC.PLATAFORMA* COORD DE MANUT / CHEFE DE MÁQ*</td><td>Controle da Fonte</td></tr>
+                    <tr><td style="font-size: 10px">TÉCNICO DE SEGURANÇA DO TRABALHO</td><td>Segurança Local</td></tr>
+                    <tr><td style="font-size: 10px">ENCARREGADO DE CONVÉS / OP DE GUINDASTE*</td><td>Limpeza e Contenção</td></tr>
+                    <tr><td style="font-size: 10px">AUXILIAR DE PLATAFORMA </td><td>Membros da equipe de limpeza</td></tr>
+                    <tr><td style="font-size: 10px">RADIO OPERADOR</td><td>Apoio a Comunicação</td></tr>
+                    <tr><td style="font-size: 10px">OFICIAL DE MÁQ e MARINHEIRO DE MÁQ</td><td>Auxiliam o Chefe de Máquinas</td></tr>
+                    <tr><td style="font-size: 10px">MESTRE DE CABOTAGEM</td><td>Previne a queda do óleo no mar</td></tr>
+                </tbody>
+            </table>
+        </div>        
+        </div>
+        
+    <div class="col2">
+        <div class="a-row0">
+            <table class="abandon-major-title">
+                <tr><td>ESTAÇÕES DE ABANDONO DE NAVIO</td></tr>
+            </table>
+        </div>
+        <div class="a-row1">
+            <table>
+                <tr><td class="abandon-table-title" colspan="2">BALEEIRA #1 (Alternativa #4)</td></tr>
+                <tr><td class="abandon-table-minor-title" colspan="2">Tripulação</td></tr>	
+                <tr><td>POSIÇÃO</td><td>FUNÇÃO</td></tr>
+                <tr><td>SDPO (Serviço)</td><td>Timoneiro</td></tr>
+                <tr><td>DPO (Serviço)</td><td>2º Timoneiro</td></tr>
+                <tr><td>Op. Guindaste (Serviço)</td><td>Assistente na Proa</td></tr>
+                <tr><td>MNC (Serviço)</td><td>Assistente na Popa</td></tr>
+                <tr><td>Of. Máquinas(Folga)</td><td>Mecânico</td></tr>
+            </table>
+            <table>
+                <tr><td class="abandon-table-title" colspan="2">BALEEIRA #2 (Alternativa #5)</td></tr>
+                <tr><td class="abandon-table-minor-title" colspan="2">Tripulação</td></tr>
+                <tr><td>POSIÇÃO</td><td>FUNÇÃO</td></tr>
+                <tr><td>POSIÇÃO</td><td>FUNÇÃO</td></tr>
+                <tr><td>SDPO (Folga)</td><td>Timoneiro</td></tr>
+                <tr><td>MCB</td><td>2º Timoneiro</td></tr>
+                <tr><td>Enc. Convés(Serviço)</td><td>Assistente na Proa</td></tr>
+                <tr><td>Enc. Convés (Folga)</td><td>Assistente na Popa</td></tr>
+                <tr><td>Of. Máquinas (serviço)</td><td>Mecânico</td></tr>
+            </table>
+            <table>
+                <tr><td class="abandon-table-title " colspan="2">BALEEIRA #3 (Alternativa #6)</td></tr>
+                <tr><td class="abandon-table-minor-title" colspan="2" colspan="2">Tripulação</td></tr>	
+                <tr><td>POSIÇÃO</td><td>FUNÇÃO</td></tr>
+                <tr><td>Imediato</td><td>Timoneiro</td></tr>
+                <tr><td>DPO (Folga)</td><td>2º Timoneiro</td></tr>
+                <tr><td>Op. Guindaste (Folga)</td><td>Assistente na Proa</td></tr>
+                <tr><td>MNC (Folga)</td><td>Assistente na Popa</td></tr>
+                <tr><td>Chefe de Máq.</td><td>Mecânico</td></tr>
+            </table>
+        </div>
+        <div class="a-row3">
+
+            <div class="a-row3-row">
+                <table class="function-table">
+                    <tr><td class="function-title">COMANDANTE / OIM</td></tr>
+                    <tr><td>{{funs['CPT'][0]}}</td></tr>
+                </table>
+                <table class="function-table">
+                    <tr><td class="function-title">IMEDIATO</td></tr>
+                    <tr><td>{{ funs['IMT'][0] }}</td></tr>
+                </table>
+                <table class="function-table">
+                    <tr><td class="function-title">CHEFE DE MÁQUINAS</td></tr>
+                    <tr><td>{{ funs['CFM'][0] }}</td></tr>
+                </table>
+            </div>
+            <div class="a-row3-row">
+                <table class="function-table">
+                    <tr><td class="function-title">SUPERINTENDENTE DE PLATAFORMA</td></tr>
+                    <tr><td>{{ funs['RIGSUP'][0] }}</td></tr>
+                </table>
+                <table class="function-table">
+                    <tr><td class="function-title">COORDENADOR DE MANUTENÇÃO</td></tr>
+                    <tr><td>{{ funs['RM'] }}</td></tr>
+                </table>
+                <table class="function-table">
+                    <tr><td class="function-title">REPRESENTANTE DA COMPANHIA</td></tr>
+                    <tr><td>{{ funs['MAINTCOORD'][0] }}</td></tr>
+                </table>
+            </div>
+
+            <div class="a-row3-row">
+                <table class="function-table">
+                    <tr><td class="function-title">ELECTRONIC / ELECTRICAL SUPERVISOR</td></tr>
+                    <tr><td>{{ funs['ELECSUP'][0] }}</td></tr>
+                </table>
+                <table class="function-table">
+                    <tr><td class="function-title">DPOs</td></tr>
+                    {% for name in funs['DPOS'] %}
+                    <tr><td>{{ name }}</td></tr>
+                    {% endfor %}
+                </table>
+                <table class="function-table">
+                    <tr><td class="function-title">SDPOs</td></tr>
+                    {% for name in funs['SDPOS'] %}
+                    <tr><td>{{ name }}</td></tr>
+                    {% endfor %}
+                </table>
+            </div>
+
+            <div class="a-row3-row">
+                <table class="function-table">
+                    <tr><td class="function-title">OPERADORES DE GUINDASTE</td></tr>
+                    {% for name in funs['CRANEOPS'] %}
+                    <tr><td>{{ name }}</td></tr>
+                    {% endfor %}
+                </table>
+                <table class="function-table">
+                    <tr><td class="function-title">AUXILIARES DE PLATAFORMA</td></tr>
+                    {% for name in funs['AUXPLATS'] %}
+                    <tr><td>{{ name }}</td></tr>
+                    {% endfor %}
+                </table>
+                <table class="function-table">
+                    <tr><td class="function-title">MARINHEIROS DE CONVÉS</td></tr>
+                    {% for name in funs['MNCS'] %}
+                    <tr><td>{{ name }}</td></tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <div class="a-row3-row">
+                <table class="function-table">
+                    <tr><td class="function-title">RÁDIO OPERADORES</td></tr>
+                    {% for name in funs['ROPS'] %}
+                    <tr><td>{{ name }}</td></tr>
+                    {% endfor %}
+                </table>
+                <table class="function-table">
+                    <tr><td class="function-title">OFICIAIS DE MÁQUINAS</td></tr>
+                    {% for name in funs['OQMS'] %}
+                    <tr><td>{{ name }}</td></tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
