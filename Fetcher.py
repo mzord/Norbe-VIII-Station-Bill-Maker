@@ -1,4 +1,3 @@
-from json import load
 from openpyxl import load_workbook
 
 
