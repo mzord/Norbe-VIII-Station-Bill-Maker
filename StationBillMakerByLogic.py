@@ -6,6 +6,8 @@ from Fetcher import FunctionFetcher
 
 class StationBill:
 
+    # Lista de possíveis nomes para cada função.
+
     def __init__(self):
         self.workbook = load_workbook("StationBill.xlsm")
         self.stationBill = self.workbook["Lógica"]
@@ -421,6 +423,7 @@ class StationBill:
         except:
             self.stationBill["K2"].fill = redFill
 
+    # Método em progresso
     def check_errors(self):
         if len(self.ff.get_duty(self.ost_names)) >2:
             print("\nMais de dois OST`s.")
@@ -442,6 +445,7 @@ class StationBill:
             print("\nMais de três plataformistas.")
             print(self.ff.get_duty(self.floorman_names))
 
+    # Função que gera a GUI do PySimpleGUI
     def make_window(self):
         while True:
             event, values = self.window.read()
@@ -454,11 +458,9 @@ class StationBill:
                 self.window.close()
         self.window.close()
         
+    # Função que salva o que foi gerado.
     def save(self):
         self.workbook.save("./StationBillMade.xlsx")
 
 
 sb = StationBill()
-# sb.set_functions()
-# sb.check_errors()
-# sb.save()
